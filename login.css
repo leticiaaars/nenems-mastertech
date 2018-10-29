@@ -1,0 +1,84 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+
+.aviso{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.aviso span {
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+.aviso span i {
+    padding: 8px;
+}
+
+.aviso span p {
+    color: black;
+}
+
+header nav div i.material-icons {
+    width: 40px;
+    /* margin: 0; */
+    display: inline-block;
+    text-align: center;
+}
+
+.titulo-secao{
+    width: 100%;
+    margin-bottom: 0;  
+}
+
+.titulo-secao h1{
+    font-size: 20pt;
+    margin-top: 3px;
+    margin-bottom: 0;
+    color: #ff5252;
+}
+
+.card .card-image .card-title{
+    background-color: rgba(255, 0, 0, 0.473);
+    padding: 1px 6px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.centralizar{
+    text-align: center;
+}
+
+#cont-login{
+    width: 320px;
+}
+
+.vermelho{
+    color: #ff5252;
+}
+
+.esconder{
+    display: none;
+}
+
+.divide{
+    margin: 20px 0px;
+}
+
+.volta-login{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+#margem-lateral-esquerda{
+    margin-left: 10px;
+}

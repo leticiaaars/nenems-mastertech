@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="login.css">
+    <script defer type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script defer src="login.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Projeto</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+
+                <a href="inde" class="brand-logo">
+                    <i class="large material-icons">child_care</i>Neném</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                        <li><a href="login.html">Entre ou Faça seu cadastro</a></li>
+                        <li><a href="mobile.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+                <li><a href="login.html">Entre ou Faça seu cadastro</a></li>
+                <li><a href="mobile.html">Contato</a></li>
+        </ul>
+    </header>
+    <main>
+
+        <nav>
+            <div class="nav-wrapper">
+                <div id="margem-lateral-esquerda" class="col s12">
+                    <a href="index.html" class="breadcrumb">Página Inicial</a>
+                    <a href="#!" class="breadcrumb">Login</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="tela-login" class="row">
+            <form class="col s8 m6 l4 offset-l1 offset-m3 offset-s2">
+
+                <h4 class="centralizar"><i class="material-icons vermelho">person</i> cliente neném</h4>
+
+                <div class="input-field">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                    <span class="helper-text" data-error="Digite um email válido" data-success=""></span>
+                </div>
+
+                <div class="input-field">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Senha</label>
+                </div>
+                <a href="" class="left vermelho">Esqueci minha senha</a>
+                <a class="right waves-effect waves-light btn"><i class="material-icons left">subdirectory_arrow_right</i>Entrar</a>
+            </form>
+
+            <div class="col s10 m10 offset-m1 offset-s1 divider divide show-on-medium-and-down hide-on-large-only"></div>
+
+            <form class="col s8 m6 l5 offset-l1 offset-m3 offset-s2">
+
+                <h4 class="centralizar"><i class="material-icons vermelho">person_outline</i> novo cliente</h4>
+
+                <p>
+                    Você ainda não é nosso cliente? Seja um cliente neném agora mesmo e garanta os melhores preços do
+                    mercado!
+                </p>
+
+                <div class="input-field">
+                    <input id="email-cadastro" type="email" class="validate">
+                    <label for="email-cadastro">Email</label>
+                    <span class="helper-text" data-error="Digite um email válido" data-success=""></span>
+                </div>
+
+                <a id="botao-cadastro" class="right waves-effect waves-light btn"><i class="material-icons left">person_add</i>Cadastrar</a>
+            </form>
+
+        </div>
+
+        <div id="tela-cadastro" class="row esconder">
+
+            <form class="col s10 m10 l8 offset-l2 offset-m1 offset-s1 volta-login">
+
+                <span>
+                    Já possui cadastro conosco? Então faça o login.
+                </span>
+
+                <a id="botao-login" class="right waves-effect waves-light btn"><i class="material-icons left">person</i>Entrar</a>
+
+            </form>
+
+            <div class="col s8 m6 l10 offset-l1 offset-m3 offset-s2 divider divide"></div>
+
+
+            <form class="col s12 m12 l10 offset-l1">
+
+                <h4 class="centralizar"><i class="material-icons vermelho">person_outline</i> novo cliente</h4>
+
+                <div class="input-field col s12 m12 l6">
+                    <input id="nome_cadastro" type="text" class="validate">
+                    <label for="nome_cadastro">Nome completo</label>
+                  </div>
+
+                  <div class="input-field col s12 m12 l6">
+                    <input id="email_cadastro" type="text" class="validate">
+                    <label for="email_cadastro">E-mail</label>
+                  </div>
+
+                  <div class="input-field col s12 m12 l6">
+                    <input id="cpf_cadastro" type="text" class="validate">
+                    <label for="cpf_cadastro">CPF</label>
+                  </div>
+
+                  <div class="input-field col s12 m12 l6">
+                    <input id="telefone_cadastro" type="text" class="validate">
+                    <label for="telefone_cadastro">Telefone</label>
+                  </div>
+
+                  <div class="input-field col s6">
+                    <input id="senha_cadastro" type="password" class="validate">
+                    <label for="senha_cadastro">Senha</label>
+                  </div>
+
+                  <div class="input-field col s6">
+                    <input id="confirmar_cadastro" type="password" class="validate">
+                    <label for="confirmar_cadastro">Confirmar senha</label>
+                  </div>
+
+                  <a id="botao-login" class="right waves-effect waves-light btn"><i class="material-icons left">person</i>Criar conta</a>
+
+            </form>
+
+        </div>
+
+
+    </main>
+    <footer>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 id="icon" class="white-text">Neném</h5>
+                        <p class="grey-text text-lighten-4">Preços e condições exclusivos para o site www.nenems.com.br
+                            e para o televendas, podendo sofrer alterações sem prévia notificação.
+                            content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Saiba Mais</h5>
+                        <ul>
+
+                            <li><a class="grey-text text-lighten-3" href="#!">Trabalhe conosco</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Termos e condições</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Políticas de privacidade</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 Alunos do curso de Front End Mastertech
+                    <a class="grey-text text-lighten-4 right" href="https://mastertech.com.br/">Mastertech</a>
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+</body>
+
+</html>
